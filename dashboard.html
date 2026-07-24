@@ -3,15 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard — PathPilot</title>
+    <title>Register — PathPilot</title>
     <meta
       name="description"
-      content="Dashboard for PathPilot with exam travel plans, budget summary, safety score, and AI recommendations." />
+      content="Create a PathPilot account to plan exam travels, manage student budgets, and see AI-guided routes for your next journey."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -30,206 +32,100 @@
         </div>
 
         <nav class="main-nav" aria-label="Primary navigation">
-          <a href="index.html">Home</a>
-          <a href="login.html">Login</a>
-          <a href="register.html">Sign up</a>
-          <a href="#trips">Trips</a>
-          <a href="#recommendations">AI</a>
+          <a href="index.html#why">Why</a>
+          <a href="index.html#features">Features</a>
+          <a href="index.html#flow">How it works</a>
+          <a href="index.html#testimonials">Testimonials</a>
+          <a href="index.html#faq">FAQ</a>
         </nav>
 
         <div class="nav-actions">
           <button type="button" class="button button-ghost theme-toggle" aria-label="Toggle light and dark mode">
             <span class="theme-icon">☀️</span>
           </button>
-          <a href="#planner" class="button button-primary">Open planner</a>
+          <a href="login.html" class="button button-secondary">Login</a>
+          <a href="index.html" class="button button-primary">Home</a>
         </div>
       </header>
 
-      <main>
-        <section class="section dashboard-hero">
-          <div class="dashboard-welcome">
-            <span class="eyebrow">Your exam travel hub</span>
-            <h1>Track your next journey and plan with confidence.</h1>
-            <p>Everything you need for student travel prep — routes, budgets, emergency guides, and AI suggestions in one place.</p>
-            <div class="hero-actions">
-              <a href="#planner" class="button button-primary">Start journey planner</a>
-              <a href="#trips" class="button button-secondary">View saved trips</a>
-            </div>
-          </div>
+      <main class="auth-shell">
+        <section class="auth-panel auth-hero">
+          <span class="eyebrow">Get started</span>
+          <h1>Create your student travel account</h1>
+          <p>Register quickly to access trip advice, budget planning, and exam-safe route recommendations for your next journey.</p>
 
-          <div class="dashboard-summary-card">
-            <div class="summary-top">
-              <div>
-                <span>Next exam travel</span>
-                <strong>Chennai → Hyderabad</strong>
-              </div>
-              <span class="dashboard-status">Active</span>
+          <div class="auth-highlights">
+            <div>
+              <strong>Save your trips</strong>
+              <p>Keep itinerary plans and reminders in one place.</p>
             </div>
-            <div class="trip-progress">
-              <div class="progress-row">
-                <span>Departure</span>
-                <strong>Apr 23 • 5:10 AM</strong>
-              </div>
-              <div class="progress-row">
-                <span>Arrival</span>
-                <strong>Apr 23 • 11:35 AM</strong>
-              </div>
-              <div class="progress-row">
-                <span>Budget</span>
-                <strong>₹9,200</strong>
-              </div>
+            <div>
+              <strong>Student pricing</strong>
+              <p>Access guidance built around student budgets and low-cost stays.</p>
             </div>
-            <div class="dashboard-chart">
-              <div class="chart-bar">
-                <span class="chart-label">Transport</span>
-                <div class="chart-track"><div class="chart-fill transport-fill"></div></div>
-                <strong>62%</strong>
-              </div>
-              <div class="chart-bar">
-                <span class="chart-label">Stay</span>
-                <div class="chart-track"><div class="chart-fill stay-fill"></div></div>
-                <strong>18%</strong>
-              </div>
-              <div class="chart-bar">
-                <span class="chart-label">Food</span>
-                <div class="chart-track"><div class="chart-fill food-fill"></div></div>
-                <strong>12%</strong>
-              </div>
+            <div>
+              <strong>City-ready support</strong>
+              <p>Get local transit and safety tips for every exam destination.</p>
             </div>
           </div>
         </section>
 
-        <section class="section section-surface dashboard-metrics-grid">
-          <article class="metric-card">
-            <span class="metric-label">Safety score</span>
-            <strong>94%</strong>
-            <p>Local transit and medical support rated high in your destination city.</p>
-          </article>
-          <article class="metric-card">
-            <span class="metric-label">Budget used</span>
-            <strong>₹5,300</strong>
-            <p>On track for your ₹10,000 trip limit with recommended savings.</p>
-          </article>
-          <article class="metric-card">
-            <span class="metric-label">Trips saved</span>
-            <strong>4</strong>
-            <p>Saved itineraries, budgets, and emergency packs ready for reuse.</p>
-          </article>
-          <article class="metric-card">
-            <span class="metric-label">AI score</span>
-            <strong>88%</strong>
-            <p>Your suggested plan is optimized for cost, safety, and timing.</p>
-          </article>
-        </section>
-
-        <section id="trips" class="section">
-          <div class="section-head">
-            <span class="eyebrow">Saved trips</span>
-            <h2>Review your planned journeys at a glance.</h2>
+        <section class="auth-panel auth-card">
+          <div class="auth-header">
+            <span class="eyebrow">Sign up</span>
+            <h2>Start planning your first exam trip</h2>
+            <p>Use PathPilot to build a complete travel plan that includes routes, stays, budgets and safety checkpoints.</p>
           </div>
 
-          <div class="trip-grid">
-            <article class="trip-card">
-              <div class="trip-card-head">
-                <span class="trip-tag">Upcoming</span>
-                <strong>JEE Main • 23 Apr</strong>
-              </div>
-              <p>New Delhi → Kota</p>
-              <div class="trip-stats">
-                <span>Train + Bus</span>
-                <span>₹7,450</span>
-              </div>
-              <div class="trip-actions">
-                <a href="#" class="button button-secondary small">View plan</a>
-                <a href="#" class="button button-primary small">Edit route</a>
-              </div>
-            </article>
-            <article class="trip-card">
-              <div class="trip-card-head">
-                <span class="trip-tag accent">In progress</span>
-                <strong>NEET • 9 May</strong>
-              </div>
-              <p>Bengaluru → Hyderabad</p>
-              <div class="trip-stats">
-                <span>Flight + Metro</span>
-                <span>₹11,200</span>
-              </div>
-              <div class="trip-actions">
-                <a href="#" class="button button-secondary small">View plan</a>
-                <a href="#" class="button button-primary small">View stay</a>
-              </div>
-            </article>
-            <article class="trip-card">
-              <div class="trip-card-head">
-                <span class="trip-tag">Saved</span>
-                <strong>CAT • 18 Jun</strong>
-              </div>
-              <p>Lucknow → Delhi</p>
-              <div class="trip-stats">
-                <span>Train + Metro</span>
-                <span>₹4,950</span>
-              </div>
-              <div class="trip-actions">
-                <a href="#" class="button button-secondary small">View plan</a>
-                <a href="#" class="button button-primary small">Start prep</a>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <section id="recommendations" class="section section-accent">
-          <div class="section-head center light">
-            <span class="eyebrow">AI recommendations</span>
-            <h2>Smart suggestions for a safer, cheaper student route.</h2>
-          </div>
-
-          <div class="recommendation-grid">
-            <article class="recommendation-card">
-              <strong>Lower your commute cost</strong>
-              <p>Switch your Pune return from AC bus to intercity train and save ₹1,200 without adding time.</p>
-            </article>
-            <article class="recommendation-card">
-              <strong>Choose a study-friendly stay</strong>
-              <p>Pick the hostel near the exam center with quiet rooms and a 7-minute walk to campus.</p>
-            </article>
-            <article class="recommendation-card">
-              <strong>Safety route alert</strong>
-              <p>Avoid the auto-only stretch after 8 PM and use the metro-link road instead for safer transit.</p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section section-dark">
-          <div class="section-head center light">
-            <span class="eyebrow">Daily snapshot</span>
-            <h2>Jump into the next action for your exam journey.</h2>
-          </div>
-          <div class="snapshot-grid">
-            <div class="snapshot-card">
-              <span>Next reminder</span>
-              <strong>Pack essentials by 9:00 PM</strong>
+          <form class="auth-form" action="dashboard.html" method="get">
+            <div class="form-field">
+              <label for="register-name">Full name</label>
+              <input id="register-name" type="text" name="name" placeholder="Your name" required />
             </div>
-            <div class="snapshot-card">
-              <span>Local tip</span>
-              <strong>Carry a printed college entry pass</strong>
+            <div class="form-field">
+              <label for="register-email">Email address</label>
+              <input id="register-email" type="email" name="email" placeholder="you@example.com" required />
             </div>
-            <div class="snapshot-card">
-              <span>Weather alert</span>
-              <strong>Light rain expected at destination</strong>
+            <div class="form-field">
+              <label for="register-phone">Mobile number</label>
+              <input id="register-phone" type="tel" name="phone" placeholder="+91 98765 43210" required />
             </div>
-            <div class="snapshot-card">
-              <span>Emergency</span>
-              <strong>Nearest hospital 1.2 km from hotel</strong>
+            <div class="form-field">
+              <label for="register-city">Home city</label>
+              <input id="register-city" type="text" name="city" placeholder="Bengaluru" required />
             </div>
-          </div>
-        </section>
+            <div class="form-field">
+              <label for="register-budget">Travel budget</label>
+              <input id="register-budget" type="text" name="budget" placeholder="₹8,500" required />
+            </div>
+            <div class="form-field">
+              <label for="register-password">Create password</label>
+              <div class="password-row">
+                <input id="register-password" type="password" name="password" placeholder="Create a password" required />
+                <button type="button" class="password-toggle" aria-label="Show password">Show</button>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="register-password-confirm">Confirm password</label>
+              <div class="password-row">
+                <input id="register-password-confirm" type="password" name="confirm_password" placeholder="Confirm password" required />
+                <button type="button" class="password-toggle" aria-label="Show password">Show</button>
+              </div>
+            </div>
 
-        <section class="section section-cta">
-          <div class="cta-copy">
-            <h2>Ready to create your next student route?</h2>
-            <p>Open the planner and let PathPilot design a complete exam trip tailored to your budget and safety needs.</p>
-          </div>
-          <a href="#planner" class="button button-primary large">Open journey planner</a>
+            <button type="submit" class="button button-primary full-width">Create account</button>
+
+            <div class="divider"><span>or sign up with</span></div>
+
+            <div class="social-row">
+              <button type="button" class="button button-secondary full-width">Google</button>
+              <button type="button" class="button button-secondary full-width">Apple</button>
+            </div>
+
+            <p class="auth-footer">
+              Already have an account? <a href="login.html">Log in</a>
+            </p>
+          </form>
         </section>
             </main>
       <footer class="site-footer">
