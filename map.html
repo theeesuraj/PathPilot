@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Map — PathPilot</title>
+    <meta
+      name="description"
+      content="Explore the interactive exam travel map with route highlights, local transport layers, and destination safety zones." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand-row">
+          <a href="index.html" class="brand-mark">
+            <span class="brand-symbol">P</span>
+            <span class="brand-text">PathPilot</span>
+          </a>
+          <button class="menu-toggle" aria-expanded="false" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <nav class="main-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="planner.html">Planner</a>
+          <a href="assistant.html">Assistant</a>
+          <a href="budget.html">Budget</a>
+        </nav>
+        <div class="nav-actions">
+          <button type="button" class="button button-ghost theme-toggle" aria-label="Toggle light and dark mode">
+            <span class="theme-icon">☀️</span>
+          </button>
+          <a href="saved-trips.html" class="button button-secondary">Saved trips</a>
+          <a href="register.html" class="button button-primary">Sign up</a>
+        </div>
+      </header>
+
+      <main>
+        <section class="section map-hero">
+          <div class="map-copy">
+            <span class="eyebrow">Interactive Map</span>
+            <h1>Visualize your exam trip on a student-friendly route map.</h1>
+            <p>Track transit paths, nearby services, and safe zones with a map designed for exam travel planning.</p>
+            <div class="hero-actions">
+              <a href="#map-panel" class="button button-primary">Explore map</a>
+              <a href="transport.html" class="button button-secondary">View transport</a>
+            </div>
+          </div>
+          <div class="map-preview-card">
+            <div class="card-head">
+              <span class="card-tag">Route layer</span>
+              <span class="card-status">Interactive</span>
+            </div>
+            <div class="map-panel" id="map-panel">
+              <div class="map-pin"></div>
+              <div class="map-route"></div>
+              <div class="map-dot map-dot-1"></div>
+              <div class="map-dot map-dot-2"></div>
+              <div class="map-dot map-dot-3"></div>
+            </div>
+            <div class="map-summary-row">
+              <div>
+                <strong>9.8 km</strong>
+                <span>Total journey</span>
+              </div>
+              <div>
+                <strong>73 min</strong>
+                <span>Estimated travel</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-surface">
+          <div class="section-head">
+            <span class="eyebrow">Map layers</span>
+            <h2>Toggle the travel information you need most.</h2>
+          </div>
+          <div class="map-layer-grid">
+            <article class="layer-card">
+              <h3>Transit routes</h3>
+              <p>See the recommended train, bus, metro, and walking paths in one place.</p>
+            </article>
+            <article class="layer-card">
+              <h3>Safe zones</h3>
+              <p>Discover well-lit routes, secure stays, and emergency services near your path.</p>
+            </article>
+            <article class="layer-card">
+              <h3>Food & rest</h3>
+              <p>Find student-friendly cafés, pocket-friendly meals, and quick rest stops.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section-cta">
+          <div class="cta-copy">
+            <h2>Navigate your exam trip with clarity.</h2>
+            <p>Use PathPilot’s map view to feel confident about each connection, stay, and local route.</p>
+          </div>
+          <a href="accommodation.html" class="button button-primary large">Find stays nearby</a>
+        </section>
+            </main>
+      <footer class="site-footer">
+        <div class="footer-grid">
+          <div>
+            <div class="brand-mark compact">
+              <span class="brand-symbol">P</span>
+              <span class="brand-text">PathPilot</span>
+            </div>
+            <p>Smart travel planning for exam journeys — built with student safety, budget, and confidence in mind.</p>
+          </div>
+          <div>
+            <h4>Product</h4>
+            <a href="planner.html">Journey Planner</a>
+            <a href="assistant.html">AI Travel Assistant</a>
+            <a href="budget.html">Budget Planner</a>
+            <a href="map.html">Interactive Map</a>
+          </div>
+          <div>
+            <h4>Support</h4>
+            <a href="help.html">Help Center</a>
+            <a href="contact.html">Contact</a>
+            <a href="emergency.html">Emergency Center</a>
+          </div>
+          <div>
+            <h4>Company</h4>
+            <a href="about.html">About</a>
+            <a href="profile.html">Profile</a>
+            <a href="settings.html">Settings</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 PathPilot. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

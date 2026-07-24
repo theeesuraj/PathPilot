@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saved Trips — PathPilot</title>
+    <meta
+      name="description"
+      content="Review and manage your saved exam travel itineraries with PathPilot's Saved Trips page." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand-row">
+          <a href="index.html" class="brand-mark">
+            <span class="brand-symbol">P</span>
+            <span class="brand-text">PathPilot</span>
+          </a>
+          <button class="menu-toggle" aria-expanded="false" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <nav class="main-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="planner.html">Planner</a>
+          <a href="assistant.html">Assistant</a>
+          <a href="map.html">Map</a>
+        </nav>
+        <div class="nav-actions">
+          <button type="button" class="button button-ghost theme-toggle" aria-label="Toggle light and dark mode">
+            <span class="theme-icon">☀️</span>
+          </button>
+          <a href="notifications.html" class="button button-secondary">Notifications</a>
+          <a href="register.html" class="button button-primary">Sign up</a>
+        </div>
+      </header>
+
+      <main>
+        <section class="section saved-hero">
+          <div class="saved-copy">
+            <span class="eyebrow">Saved Trips</span>
+            <h1>All your exam itineraries in one place.</h1>
+            <p>Review saved journeys, edit plan details, and reopen any route whenever you need.</p>
+            <div class="hero-actions">
+              <a href="#saved-list" class="button button-primary">Open saved trips</a>
+              <a href="planner.html" class="button button-secondary">New journey</a>
+            </div>
+          </div>
+          <div class="saved-summary-card">
+            <div class="summary-top">
+              <div>
+                <span>Trips saved</span>
+                <strong>6</strong>
+              </div>
+              <span class="dashboard-status">Ready</span>
+            </div>
+            <div class="saved-details">
+              <div>
+                <strong>3</strong>
+                <span>Upcoming exams</span>
+              </div>
+              <div>
+                <strong>2</strong>
+                <span>Past journeys</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="saved-list" class="section section-surface">
+          <div class="section-head">
+            <span class="eyebrow">Saved trips</span>
+            <h2>Pick up any saved route and continue planning.</h2>
+          </div>
+          <div class="trip-grid">
+            <article class="trip-card">
+              <div class="trip-card-head">
+                <span class="trip-tag">Upcoming</span>
+                <strong>JEE Main • 23 Apr</strong>
+              </div>
+              <p>New Delhi → Kota</p>
+              <div class="trip-stats">
+                <span>Train + Bus</span>
+                <span>₹7,450</span>
+              </div>
+              <div class="trip-actions">
+                <a href="#" class="button button-secondary small">View plan</a>
+                <a href="#" class="button button-primary small">Edit route</a>
+              </div>
+            </article>
+            <article class="trip-card">
+              <div class="trip-card-head">
+                <span class="trip-tag accent">In progress</span>
+                <strong>NEET • 9 May</strong>
+              </div>
+              <p>Bengaluru → Hyderabad</p>
+              <div class="trip-stats">
+                <span>Flight + Metro</span>
+                <span>₹11,200</span>
+              </div>
+              <div class="trip-actions">
+                <a href="#" class="button button-secondary small">View plan</a>
+                <a href="#" class="button button-primary small">View stay</a>
+              </div>
+            </article>
+            <article class="trip-card">
+              <div class="trip-card-head">
+                <span class="trip-tag">Saved</span>
+                <strong>CAT • 18 Jun</strong>
+              </div>
+              <p>Lucknow → Delhi</p>
+              <div class="trip-stats">
+                <span>Train + Metro</span>
+                <span>₹4,950</span>
+              </div>
+              <div class="trip-actions">
+                <a href="#" class="button button-secondary small">View plan</a>
+                <a href="#" class="button button-primary small">Start prep</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section-cta">
+          <div class="cta-copy">
+            <h2>Find the trip you need fast.</h2>
+            <p>Saved trips let you return quickly to your exam travel plan with no extra setup.</p>
+          </div>
+          <a href="dashboard.html" class="button button-primary large">Go to dashboard</a>
+        </section>
+            </main>
+      <footer class="site-footer">
+        <div class="footer-grid">
+          <div>
+            <div class="brand-mark compact">
+              <span class="brand-symbol">P</span>
+              <span class="brand-text">PathPilot</span>
+            </div>
+            <p>Smart travel planning for exam journeys — built with student safety, budget, and confidence in mind.</p>
+          </div>
+          <div>
+            <h4>Product</h4>
+            <a href="planner.html">Journey Planner</a>
+            <a href="assistant.html">AI Travel Assistant</a>
+            <a href="budget.html">Budget Planner</a>
+            <a href="map.html">Interactive Map</a>
+          </div>
+          <div>
+            <h4>Support</h4>
+            <a href="help.html">Help Center</a>
+            <a href="contact.html">Contact</a>
+            <a href="emergency.html">Emergency Center</a>
+          </div>
+          <div>
+            <h4>Company</h4>
+            <a href="about.html">About</a>
+            <a href="profile.html">Profile</a>
+            <a href="settings.html">Settings</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 PathPilot. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

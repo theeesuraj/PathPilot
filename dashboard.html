@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard — PathPilot</title>
+    <meta
+      name="description"
+      content="Dashboard for PathPilot with exam travel plans, budget summary, safety score, and AI recommendations." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand-row">
+          <a href="index.html" class="brand-mark">
+            <span class="brand-symbol">P</span>
+            <span class="brand-text">PathPilot</span>
+          </a>
+          <button class="menu-toggle" aria-expanded="false" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <nav class="main-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="login.html">Login</a>
+          <a href="register.html">Sign up</a>
+          <a href="#trips">Trips</a>
+          <a href="#recommendations">AI</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button type="button" class="button button-ghost theme-toggle" aria-label="Toggle light and dark mode">
+            <span class="theme-icon">☀️</span>
+          </button>
+          <a href="#planner" class="button button-primary">Open planner</a>
+        </div>
+      </header>
+
+      <main>
+        <section class="section dashboard-hero">
+          <div class="dashboard-welcome">
+            <span class="eyebrow">Your exam travel hub</span>
+            <h1>Track your next journey and plan with confidence.</h1>
+            <p>Everything you need for student travel prep — routes, budgets, emergency guides, and AI suggestions in one place.</p>
+            <div class="hero-actions">
+              <a href="#planner" class="button button-primary">Start journey planner</a>
+              <a href="#trips" class="button button-secondary">View saved trips</a>
+            </div>
+          </div>
+
+          <div class="dashboard-summary-card">
+            <div class="summary-top">
+              <div>
+                <span>Next exam travel</span>
+                <strong>Chennai → Hyderabad</strong>
+              </div>
+              <span class="dashboard-status">Active</span>
+            </div>
+            <div class="trip-progress">
+              <div class="progress-row">
+                <span>Departure</span>
+                <strong>Apr 23 • 5:10 AM</strong>
+              </div>
+              <div class="progress-row">
+                <span>Arrival</span>
+                <strong>Apr 23 • 11:35 AM</strong>
+              </div>
+              <div class="progress-row">
+                <span>Budget</span>
+                <strong>₹9,200</strong>
+              </div>
+            </div>
+            <div class="dashboard-chart">
+              <div class="chart-bar">
+                <span class="chart-label">Transport</span>
+                <div class="chart-track"><div class="chart-fill transport-fill"></div></div>
+                <strong>62%</strong>
+              </div>
+              <div class="chart-bar">
+                <span class="chart-label">Stay</span>
+                <div class="chart-track"><div class="chart-fill stay-fill"></div></div>
+                <strong>18%</strong>
+              </div>
+              <div class="chart-bar">
+                <span class="chart-label">Food</span>
+                <div class="chart-track"><div class="chart-fill food-fill"></div></div>
+                <strong>12%</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-surface dashboard-metrics-grid">
+          <article class="metric-card">
+            <span class="metric-label">Safety score</span>
+            <strong>94%</strong>
+            <p>Local transit and medical support rated high in your destination city.</p>
+          </article>
+          <article class="metric-card">
+            <span class="metric-label">Budget used</span>
+            <strong>₹5,300</strong>
+            <p>On track for your ₹10,000 trip limit with recommended savings.</p>
+          </article>
+          <article class="metric-card">
+            <span class="metric-label">Trips saved</span>
+            <strong>4</strong>
+            <p>Saved itineraries, budgets, and emergency packs ready for reuse.</p>
+          </article>
+          <article class="metric-card">
+            <span class="metric-label">AI score</span>
+            <strong>88%</strong>
+            <p>Your suggested plan is optimized for cost, safety, and timing.</p>
+          </article>
+        </section>
+
+        <section id="trips" class="section">
+          <div class="section-head">
+            <span class="eyebrow">Saved trips</span>
+            <h2>Review your planned journeys at a glance.</h2>
+          </div>
+
+          <div class="trip-grid">
+            <article class="trip-card">
+              <div class="trip-card-head">
+                <span class="trip-tag">Upcoming</span>
+                <strong>JEE Main • 23 Apr</strong>
+              </div>
+              <p>New Delhi → Kota</p>
+              <div class="trip-stats">
+                <span>Train + Bus</span>
+                <span>₹7,450</span>
+              </div>
+              <div class="trip-actions">
+                <a href="#" class="button button-secondary small">View plan</a>
+                <a href="#" class="button button-primary small">Edit route</a>
+              </div>
+            </article>
+            <article class="trip-card">
+              <div class="trip-card-head">
+                <span class="trip-tag accent">In progress</span>
+                <strong>NEET • 9 May</strong>
+              </div>
+              <p>Bengaluru → Hyderabad</p>
+              <div class="trip-stats">
+                <span>Flight + Metro</span>
+                <span>₹11,200</span>
+              </div>
+              <div class="trip-actions">
+                <a href="#" class="button button-secondary small">View plan</a>
+                <a href="#" class="button button-primary small">View stay</a>
+              </div>
+            </article>
+            <article class="trip-card">
+              <div class="trip-card-head">
+                <span class="trip-tag">Saved</span>
+                <strong>CAT • 18 Jun</strong>
+              </div>
+              <p>Lucknow → Delhi</p>
+              <div class="trip-stats">
+                <span>Train + Metro</span>
+                <span>₹4,950</span>
+              </div>
+              <div class="trip-actions">
+                <a href="#" class="button button-secondary small">View plan</a>
+                <a href="#" class="button button-primary small">Start prep</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="recommendations" class="section section-accent">
+          <div class="section-head center light">
+            <span class="eyebrow">AI recommendations</span>
+            <h2>Smart suggestions for a safer, cheaper student route.</h2>
+          </div>
+
+          <div class="recommendation-grid">
+            <article class="recommendation-card">
+              <strong>Lower your commute cost</strong>
+              <p>Switch your Pune return from AC bus to intercity train and save ₹1,200 without adding time.</p>
+            </article>
+            <article class="recommendation-card">
+              <strong>Choose a study-friendly stay</strong>
+              <p>Pick the hostel near the exam center with quiet rooms and a 7-minute walk to campus.</p>
+            </article>
+            <article class="recommendation-card">
+              <strong>Safety route alert</strong>
+              <p>Avoid the auto-only stretch after 8 PM and use the metro-link road instead for safer transit.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section-dark">
+          <div class="section-head center light">
+            <span class="eyebrow">Daily snapshot</span>
+            <h2>Jump into the next action for your exam journey.</h2>
+          </div>
+          <div class="snapshot-grid">
+            <div class="snapshot-card">
+              <span>Next reminder</span>
+              <strong>Pack essentials by 9:00 PM</strong>
+            </div>
+            <div class="snapshot-card">
+              <span>Local tip</span>
+              <strong>Carry a printed college entry pass</strong>
+            </div>
+            <div class="snapshot-card">
+              <span>Weather alert</span>
+              <strong>Light rain expected at destination</strong>
+            </div>
+            <div class="snapshot-card">
+              <span>Emergency</span>
+              <strong>Nearest hospital 1.2 km from hotel</strong>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-cta">
+          <div class="cta-copy">
+            <h2>Ready to create your next student route?</h2>
+            <p>Open the planner and let PathPilot design a complete exam trip tailored to your budget and safety needs.</p>
+          </div>
+          <a href="#planner" class="button button-primary large">Open journey planner</a>
+        </section>
+            </main>
+      <footer class="site-footer">
+        <div class="footer-grid">
+          <div>
+            <div class="brand-mark compact">
+              <span class="brand-symbol">P</span>
+              <span class="brand-text">PathPilot</span>
+            </div>
+            <p>Smart travel planning for exam journeys — built with student safety, budget, and confidence in mind.</p>
+          </div>
+          <div>
+            <h4>Product</h4>
+            <a href="planner.html">Journey Planner</a>
+            <a href="assistant.html">AI Travel Assistant</a>
+            <a href="budget.html">Budget Planner</a>
+            <a href="map.html">Interactive Map</a>
+          </div>
+          <div>
+            <h4>Support</h4>
+            <a href="help.html">Help Center</a>
+            <a href="contact.html">Contact</a>
+            <a href="emergency.html">Emergency Center</a>
+          </div>
+          <div>
+            <h4>Company</h4>
+            <a href="about.html">About</a>
+            <a href="profile.html">Profile</a>
+            <a href="settings.html">Settings</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 PathPilot. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

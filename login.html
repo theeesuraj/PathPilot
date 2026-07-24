@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login — PathPilot</title>
+    <meta
+      name="description"
+      content="Sign in to PathPilot and continue planning your exam travel journey with AI-guided routes, budget tools, and safety support."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand-row">
+          <a href="index.html" class="brand-mark">
+            <span class="brand-symbol">P</span>
+            <span class="brand-text">PathPilot</span>
+          </a>
+          <button class="menu-toggle" aria-expanded="false" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <nav class="main-nav" aria-label="Primary navigation">
+          <a href="index.html#why">Why</a>
+          <a href="index.html#features">Features</a>
+          <a href="index.html#flow">How it works</a>
+          <a href="index.html#testimonials">Testimonials</a>
+          <a href="index.html#faq">FAQ</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button type="button" class="button button-ghost theme-toggle" aria-label="Toggle light and dark mode">
+            <span class="theme-icon">☀️</span>
+          </button>
+          <a href="register.html" class="button button-primary">Sign up</a>
+        </div>
+      </header>
+
+      <main class="auth-shell">
+        <section class="auth-panel auth-hero">
+          <span class="eyebrow">Welcome back</span>
+          <h1>Sign in to your PathPilot account</h1>
+          <p>Continue planning your exam journey with saved routes, budgets, and safety recommendations ready to go.</p>
+
+          <div class="auth-highlights">
+            <div>
+              <strong>Dashboard access</strong>
+              <p>Pick up where you left off with your latest trip data.</p>
+            </div>
+            <div>
+              <strong>Secure login</strong>
+              <p>Encrypted sign-in for student travel planning only.</p>
+            </div>
+            <div>
+              <strong>Fast resume</strong>
+              <p>Jump straight into itinerary, hotel, and local transport guidance.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="auth-panel auth-card">
+          <div class="auth-header">
+            <span class="eyebrow">Sign in</span>
+            <h2>Secure student travel access</h2>
+            <p>Enter your credentials to load your saved exam trips and continue planning.</p>
+          </div>
+
+          <form class="auth-form" action="#" method="post">
+            <div class="form-field">
+              <label for="login-email">Email address</label>
+              <input id="login-email" type="email" name="email" placeholder="you@example.com" required />
+            </div>
+
+            <div class="form-field">
+              <label for="login-password">Password</label>
+              <div class="password-row">
+                <input id="login-password" type="password" name="password" placeholder="Enter password" required />
+                <button type="button" class="password-toggle" aria-label="Show password">Show</button>
+              </div>
+            </div>
+
+            <div class="form-meta">
+              <label class="checkbox-field">
+                <input type="checkbox" name="remember" />
+                <span>Remember me</span>
+              </label>
+              <a href="#" class="small-link">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="button button-primary full-width">Sign in</button>
+
+            <div class="divider"><span>or continue with</span></div>
+
+            <div class="social-row">
+              <button type="button" class="button button-secondary full-width">Google</button>
+              <button type="button" class="button button-secondary full-width">Apple</button>
+            </div>
+
+            <p class="auth-footer">
+              New to PathPilot? <a href="register.html">Create an account</a>
+            </p>
+          </form>
+        </section>
+            </main>
+      <footer class="site-footer">
+        <div class="footer-grid">
+          <div>
+            <div class="brand-mark compact">
+              <span class="brand-symbol">P</span>
+              <span class="brand-text">PathPilot</span>
+            </div>
+            <p>Smart travel planning for exam journeys — built with student safety, budget, and confidence in mind.</p>
+          </div>
+          <div>
+            <h4>Product</h4>
+            <a href="planner.html">Journey Planner</a>
+            <a href="assistant.html">AI Travel Assistant</a>
+            <a href="budget.html">Budget Planner</a>
+            <a href="map.html">Interactive Map</a>
+          </div>
+          <div>
+            <h4>Support</h4>
+            <a href="help.html">Help Center</a>
+            <a href="contact.html">Contact</a>
+            <a href="emergency.html">Emergency Center</a>
+          </div>
+          <div>
+            <h4>Company</h4>
+            <a href="about.html">About</a>
+            <a href="profile.html">Profile</a>
+            <a href="settings.html">Settings</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 PathPilot. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

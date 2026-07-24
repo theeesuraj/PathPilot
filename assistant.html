@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Travel Assistant — PathPilot</title>
+    <meta
+      name="description"
+      content="Chat with PathPilot's AI Travel Assistant for smarter exam trip planning, safety checks, and budget optimizations." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand-row">
+          <a href="index.html" class="brand-mark">
+            <span class="brand-symbol">P</span>
+            <span class="brand-text">PathPilot</span>
+          </a>
+          <button class="menu-toggle" aria-expanded="false" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <nav class="main-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="planner.html">Planner</a>
+          <a href="budget.html">Budget</a>
+          <a href="map.html">Map</a>
+        </nav>
+        <div class="nav-actions">
+          <button type="button" class="button button-ghost theme-toggle" aria-label="Toggle light and dark mode">
+            <span class="theme-icon">☀️</span>
+          </button>
+          <a href="saved-trips.html" class="button button-secondary">Saved trips</a>
+          <a href="register.html" class="button button-primary">Sign up</a>
+        </div>
+      </header>
+
+      <main>
+        <section class="section assistant-hero">
+          <div class="assistant-copy">
+            <span class="eyebrow">AI Travel Assistant</span>
+            <h1>Ask PathPilot for the smartest exam journey suggestions.</h1>
+            <p>Chat with our assistant to refine routes, optimize budget, check safety, and prepare every step of your travel plan.</p>
+            <div class="hero-actions">
+              <a href="#chat" class="button button-primary">Open assistant</a>
+              <a href="#prompts" class="button button-secondary">Suggested prompts</a>
+            </div>
+          </div>
+          <div class="assistant-summary-card">
+            <div class="assistant-metric">
+              <strong>89%</strong>
+              <span>travel confidence</span>
+            </div>
+            <div class="assistant-metric">
+              <strong>24</strong>
+              <span>route options</span>
+            </div>
+            <div class="assistant-metric">
+              <strong>5</strong>
+              <span>smart hints</span>
+            </div>
+          </div>
+        </section>
+
+        <section id="chat" class="section section-surface">
+          <div class="section-head">
+            <span class="eyebrow">Live chat</span>
+            <h2>Ask your questions and get practical exam travel guidance.</h2>
+          </div>
+          <div class="assistant-grid">
+            <div class="chat-window">
+              <div class="chat-message user-message">
+                <span>What’s the safest route from Jaipur to Delhi for my NEET exam?</span>
+              </div>
+              <div class="chat-message bot-message">
+                <span>Choose an early morning AC train to minimize travel disruption, then take the direct metro line to your exam center. I can also suggest an affordable stay within 3 km.</span>
+              </div>
+              <div class="chat-message user-message">
+                <span>Suggest a student-friendly hotel with breakfast near the venue.</span>
+              </div>
+              <div class="chat-message bot-message">
+                <span>Use the guesthouse filter to select a stay under ₹1,200 near the exam center. I recommend the StudyNest Lodge for quiet rooms and easy local transit.</span>
+              </div>
+              <div class="assistant-input-row">
+                <input id="assistant-prompt" type="text" placeholder="Ask PathPilot a travel question" />
+                <button id="assistant-send" type="button" class="button button-primary">Send</button>
+              </div>
+            </div>
+            <aside class="assistant-side-card">
+              <h3>Suggested prompts</h3>
+              <button class="button button-secondary full-width">Compare train and bus options</button>
+              <button class="button button-secondary full-width">Optimize my ₹10,000 budget</button>
+              <button class="button button-secondary full-width">Show emergency services near stay</button>
+              <button class="button button-secondary full-width">Prepare a packing checklist</button>
+            </aside>
+          </div>
+        </section>
+
+        <section id="prompts" class="section">
+          <div class="section-head">
+            <span class="eyebrow">AI prompts</span>
+            <h2>Ready-to-use questions for the best travel advice.</h2>
+          </div>
+          <div class="prompt-grid">
+            <article class="prompt-card">
+              <strong>Plan my route to a city I’ve never visited</strong>
+              <p>Get a complete student-friendly route with transport, stay and local transit information.</p>
+            </article>
+            <article class="prompt-card">
+              <strong>Optimize my budget and food plan</strong>
+              <p>Keep your costs low by comparing hostel, food and transit options.</p>
+            </article>
+            <article class="prompt-card">
+              <strong>Check safety tips for exam night</strong>
+              <p>See the safest arrival, stay, and campus access advice for your destination.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section-cta">
+          <div class="cta-copy">
+            <h2>Need a complete exam travel partner?</h2>
+            <p>Let PathPilot’s AI support every decision — from trip planning to safe arrival and return.</p>
+          </div>
+          <a href="planner.html" class="button button-primary large">Use the journey planner</a>
+        </section>
+            </main>
+      <footer class="site-footer">
+        <div class="footer-grid">
+          <div>
+            <div class="brand-mark compact">
+              <span class="brand-symbol">P</span>
+              <span class="brand-text">PathPilot</span>
+            </div>
+            <p>Smart travel planning for exam journeys — built with student safety, budget, and confidence in mind.</p>
+          </div>
+          <div>
+            <h4>Product</h4>
+            <a href="planner.html">Journey Planner</a>
+            <a href="assistant.html">AI Travel Assistant</a>
+            <a href="budget.html">Budget Planner</a>
+            <a href="map.html">Interactive Map</a>
+          </div>
+          <div>
+            <h4>Support</h4>
+            <a href="help.html">Help Center</a>
+            <a href="contact.html">Contact</a>
+            <a href="emergency.html">Emergency Center</a>
+          </div>
+          <div>
+            <h4>Company</h4>
+            <a href="about.html">About</a>
+            <a href="profile.html">Profile</a>
+            <a href="settings.html">Settings</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 PathPilot. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

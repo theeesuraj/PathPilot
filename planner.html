@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Journey Planner — PathPilot</title>
+    <meta
+      name="description"
+      content="Design your exam travel plan with PathPilot's journey planner, route options, budget settings, and admit card extraction." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand-row">
+          <a href="index.html" class="brand-mark">
+            <span class="brand-symbol">P</span>
+            <span class="brand-text">PathPilot</span>
+          </a>
+          <button class="menu-toggle" aria-expanded="false" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <nav class="main-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="assistant.html">Assistant</a>
+          <a href="budget.html">Budget</a>
+          <a href="map.html">Map</a>
+        </nav>
+        <div class="nav-actions">
+          <button type="button" class="button button-ghost theme-toggle" aria-label="Toggle light and dark mode">
+            <span class="theme-icon">☀️</span>
+          </button>
+          <a href="saved-trips.html" class="button button-secondary">Saved trips</a>
+          <a href="register.html" class="button button-primary">Get started</a>
+        </div>
+      </header>
+
+      <main>
+        <section class="section planner-hero">
+          <div class="planner-copy">
+            <span class="eyebrow">Journey Planner</span>
+            <h1>Build a complete exam route in minutes.</h1>
+            <p>Set your starting city, destination, budget, and travel preferences. PathPilot creates the safest, most affordable itinerary for your exam day.</p>
+            <div class="hero-actions">
+              <a href="#planner-form" class="button button-primary">Create itinerary</a>
+              <a href="#sample-itinerary" class="button button-secondary">View sample plan</a>
+            </div>
+          </div>
+
+          <div class="planner-preview-card">
+            <div class="card-head">
+              <span class="card-tag">Live planner</span>
+              <span class="card-status">Ready</span>
+            </div>
+            <div class="route-summary">
+              <div>
+                <strong>Chennai</strong>
+                <span>to Mumbai</span>
+              </div>
+              <div class="trip-chip">CAT • 18 Jun</div>
+            </div>
+            <div class="route-map route-map-small">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="route-details">
+              <div>
+                <small>Travel mode</small>
+                <strong>Flight + Metro</strong>
+              </div>
+              <div>
+                <small>Trip cost</small>
+                <strong>₹9,200</strong>
+              </div>
+            </div>
+            <div class="planner-extra-row">
+              <div class="mini-card">
+                <strong>4h 20m</strong>
+                <span>Total time</span>
+              </div>
+              <div class="mini-card">
+                <strong>92%</strong>
+                <span>Safety rating</span>
+              </div>
+            </div>
+            <article class="section-surface value-card" id="planner-preview-card">
+              <strong>Generated route preview</strong>
+              <p id="planner-preview">Start by generating your itinerary to see a detailed route here.</p>
+              <strong>Stay guidance</strong>
+              <p id="planner-stay">We’ll suggest the safest nearby stay options once your route is ready.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="planner-form" class="section section-surface">
+          <div class="section-head">
+            <span class="eyebrow">Your route</span>
+            <h2>Tell us where you’re coming from and where you need to be.</h2>
+          </div>
+          <div class="planner-grid">
+            <form class="planner-form">
+              <div class="form-field">
+                <label for="from-city">Starting city</label>
+                <input id="from-city" type="text" placeholder="Bengaluru" required />
+              </div>
+              <div class="form-field">
+                <label for="to-city">Exam city</label>
+                <input id="to-city" type="text" placeholder="Pune" required />
+              </div>
+              <div class="form-field">
+                <label for="exam-date">Exam date</label>
+                <input id="exam-date" type="date" required />
+              </div>
+              <div class="form-field">
+                <label for="budget-plan">Travel budget</label>
+                <input id="budget-plan" type="text" placeholder="₹8,500" required />
+              </div>
+              <div class="form-field">
+                <label for="travel-type">Preferred transport</label>
+                <select id="travel-type">
+                  <option>Balanced</option>
+                  <option>Cheapest</option>
+                  <option>Fastest</option>
+                  <option>Safety-first</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="stay-type">Accommodation style</label>
+                <select id="stay-type">
+                  <option>Budget hostel</option>
+                  <option>Private room</option>
+                  <option>PG / guesthouse</option>
+                </select>
+              </div>
+              <button type="submit" class="button button-primary full-width">Generate itinerary</button>
+            </form>
+
+            <aside class="planner-side-card">
+              <div class="info-card">
+                <h3>Admit card guidance</h3>
+                <p>Upload your exam admit card to auto-fill venue, timing, and hall details.</p>
+                <button class="button button-secondary full-width">Upload admit card</button>
+              </div>
+              <div class="info-card">
+                <h3>Smart suggestions</h3>
+                <ul>
+                  <li>Prefer trains for more cost savings.</li>
+                  <li>Choose stays within 2 km of the exam center.</li>
+                  <li>Book return transport for evening arrival safety.</li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section id="sample-itinerary" class="section">
+          <div class="section-head">
+            <span class="eyebrow">Sample itinerary</span>
+            <h2>Your journey plan once you hit generate.</h2>
+          </div>
+          <div class="itinerary-grid">
+            <article class="itinerary-card">
+              <span class="itinerary-step">Step 1</span>
+              <h3>Travel to the departure point</h3>
+              <p>Leave home at 1:00 AM to catch the early train from KSR Bengaluru, ensuring relaxed arrival and on-time check-in.</p>
+            </article>
+            <article class="itinerary-card">
+              <span class="itinerary-step">Step 2</span>
+              <h3>Reach your stay</h3>
+              <p>Arrive in Pune by 9:10 AM and check into the student-friendly guesthouse near the exam center.</p>
+            </article>
+            <article class="itinerary-card">
+              <span class="itinerary-step">Step 3</span>
+              <h3>Exam day route</h3>
+              <p>Walk or take a short auto to the exam center, arriving 45 minutes early to avoid last-minute stress.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section-cta">
+          <div class="cta-copy">
+            <h2>Ready for your travel plan?</h2>
+            <p>Use the journey planner to create a full student trip with route, stay, budget, and safety all in one flow.</p>
+          </div>
+          <a href="assistant.html" class="button button-primary large">Ask PathPilot</a>
+        </section>
+            </main>
+      <footer class="site-footer">
+        <div class="footer-grid">
+          <div>
+            <div class="brand-mark compact">
+              <span class="brand-symbol">P</span>
+              <span class="brand-text">PathPilot</span>
+            </div>
+            <p>Smart travel planning for exam journeys — built with student safety, budget, and confidence in mind.</p>
+          </div>
+          <div>
+            <h4>Product</h4>
+            <a href="planner.html">Journey Planner</a>
+            <a href="assistant.html">AI Travel Assistant</a>
+            <a href="budget.html">Budget Planner</a>
+            <a href="map.html">Interactive Map</a>
+          </div>
+          <div>
+            <h4>Support</h4>
+            <a href="help.html">Help Center</a>
+            <a href="contact.html">Contact</a>
+            <a href="emergency.html">Emergency Center</a>
+          </div>
+          <div>
+            <h4>Company</h4>
+            <a href="about.html">About</a>
+            <a href="profile.html">Profile</a>
+            <a href="settings.html">Settings</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 PathPilot. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

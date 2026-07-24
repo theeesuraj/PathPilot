@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accommodation Finder — PathPilot</title>
+    <meta
+      name="description"
+      content="Find affordable student accommodation for exam travel with PathPilot's safe stay recommendations." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand-row">
+          <a href="index.html" class="brand-mark">
+            <span class="brand-symbol">P</span>
+            <span class="brand-text">PathPilot</span>
+          </a>
+          <button class="menu-toggle" aria-expanded="false" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <nav class="main-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="planner.html">Planner</a>
+          <a href="assistant.html">Assistant</a>
+          <a href="map.html">Map</a>
+        </nav>
+        <div class="nav-actions">
+          <button type="button" class="button button-ghost theme-toggle" aria-label="Toggle light and dark mode">
+            <span class="theme-icon">☀️</span>
+          </button>
+          <a href="saved-trips.html" class="button button-secondary">Saved trips</a>
+          <a href="register.html" class="button button-primary">Sign up</a>
+        </div>
+      </header>
+
+      <main>
+        <section class="section accommodation-hero">
+          <div class="accommodation-copy">
+            <span class="eyebrow">Accommodation Finder</span>
+            <h1>Choose safe, student-friendly stays close to your exam center.</h1>
+            <p>Compare affordable hostels, guesthouses, and shared rooms with ratings, distance, and transport advice.</p>
+            <div class="hero-actions">
+              <a href="#stay-list" class="button button-primary">Browse stays</a>
+              <a href="#filters" class="button button-secondary">Set filters</a>
+            </div>
+          </div>
+          <div class="accommodation-summary-card">
+            <div class="summary-top">
+              <div>
+                <span>Suggested stays</span>
+                <strong>18 options</strong>
+              </div>
+              <span class="dashboard-status">Student picked</span>
+            </div>
+            <div class="accommodation-details">
+              <div>
+                <strong>₹1,250</strong>
+                <span>avg. nightly cost</span>
+              </div>
+              <div>
+                <strong>1.6 km</strong>
+                <span>avg. walk distance</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="filters" class="section section-surface">
+          <div class="section-head">
+            <span class="eyebrow">Filters</span>
+            <h2>Refine the stay options for your exam travel.</h2>
+          </div>
+          <div class="filter-grid">
+            <div class="filter-card">
+              <strong>Budget</strong>
+              <span>Under ₹1,500</span>
+            </div>
+            <div class="filter-card">
+              <strong>Distance</strong>
+              <span>Within 2 km</span>
+            </div>
+            <div class="filter-card">
+              <strong>Type</strong>
+              <span>Guesthouse / hostel</span>
+            </div>
+            <div class="filter-card">
+              <strong>Safe score</strong>
+              <span>Above 90%</span>
+            </div>
+          </div>
+        </section>
+
+        <section id="stay-list" class="section">
+          <div class="section-head">
+            <span class="eyebrow">Stay options</span>
+            <h2>Find the best student stay for your exam location.</h2>
+          </div>
+          <div class="stay-grid">
+            <article class="stay-card">
+              <div class="stay-card-top">
+                <strong>StudyNest Hostel</strong>
+                <span>₹1,050 / night</span>
+              </div>
+              <p>Quiet shared rooms, breakfast included, 1.2 km from exam center.</p>
+              <div class="stay-meta">
+                <span>4.8 ★</span>
+                <span>Free Wi-Fi</span>
+                <span>Safe area</span>
+              </div>
+              <a href="#" class="button button-primary small">Book view</a>
+            </article>
+            <article class="stay-card">
+              <div class="stay-card-top">
+                <strong>Campus Corner</strong>
+                <span>₹1,250 / night</span>
+              </div>
+              <p>Private room available with quick metro access and 24/7 support.</p>
+              <div class="stay-meta">
+                <span>4.7 ★</span>
+                <span>Breakfast</span>
+                <span>Study desk</span>
+              </div>
+              <a href="#" class="button button-primary small">Book view</a>
+            </article>
+            <article class="stay-card">
+              <div class="stay-card-top">
+                <strong>SafeStay Guesthouse</strong>
+                <span>₹1,380 / night</span>
+              </div>
+              <p>Budget private rooms near local food and transport links.</p>
+              <div class="stay-meta">
+                <span>4.9 ★</span>
+                <span>Secure check-in</span>
+                <span>Quiet zone</span>
+              </div>
+              <a href="#" class="button button-primary small">Book view</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section-cta">
+          <div class="cta-copy">
+            <h2>Lock in the right stay for your exam night.</h2>
+            <p>Choose affordable, safe accommodation that puts you minutes away from your center.</p>
+          </div>
+          <a href="transport.html" class="button button-primary large">See local transport</a>
+        </section>
+            </main>
+      <footer class="site-footer">
+        <div class="footer-grid">
+          <div>
+            <div class="brand-mark compact">
+              <span class="brand-symbol">P</span>
+              <span class="brand-text">PathPilot</span>
+            </div>
+            <p>Smart travel planning for exam journeys — built with student safety, budget, and confidence in mind.</p>
+          </div>
+          <div>
+            <h4>Product</h4>
+            <a href="planner.html">Journey Planner</a>
+            <a href="assistant.html">AI Travel Assistant</a>
+            <a href="budget.html">Budget Planner</a>
+            <a href="map.html">Interactive Map</a>
+          </div>
+          <div>
+            <h4>Support</h4>
+            <a href="help.html">Help Center</a>
+            <a href="contact.html">Contact</a>
+            <a href="emergency.html">Emergency Center</a>
+          </div>
+          <div>
+            <h4>Company</h4>
+            <a href="about.html">About</a>
+            <a href="profile.html">Profile</a>
+            <a href="settings.html">Settings</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 PathPilot. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PathPilot — Smart travel for exam journeys</title>
+    <meta
+      name="description"
+      content="PathPilot helps students plan safe, affordable exam travel with AI-guided routes, budget planners, and city-ready support."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand-row">
+          <a href="#hero" class="brand-mark">
+            <span class="brand-symbol">P</span>
+            <span class="brand-text">PathPilot</span>
+          </a>
+          <button class="menu-toggle" aria-expanded="false" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <nav class="main-nav" aria-label="Primary navigation">
+          <a href="#why">Why</a>
+          <a href="#features">Features</a>
+          <a href="#flow">How it works</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button type="button" class="button button-ghost theme-toggle" aria-label="Toggle light and dark mode">
+            <span class="theme-icon">☀️</span>
+          </button>
+          <a href="login.html" class="button button-secondary">Login</a>
+          <a href="register.html" class="button button-primary">Sign up</a>
+        </div>
+      </header>
+
+      <main>
+        <section id="hero" class="hero-section">
+          <div class="hero-copy">
+            <span class="eyebrow">Student travel, reimagined</span>
+            <h1>Smart travel for exam journeys.</h1>
+            <p>
+              Plan your entire exam trip with AI-guided routes, student-friendly stays,
+              safety coaching, and budget control — all from one website.
+            </p>
+            <div class="hero-actions">
+              <a href="register.html" class="button button-primary">Start planning</a>
+              <a href="#preview" class="button button-ghost">See demo</a>
+            </div>
+            <div class="hero-note">
+              <span class="note-pill">Fast setup</span>
+              <span class="note-pill">Budget friendly routes</span>
+              <span class="note-pill">Safety first</span>
+            </div>
+            <div class="hero-stats">
+              <div>
+                <strong>5,000+</strong>
+                <span>students planned</span>
+              </div>
+              <div>
+                <strong>60+</strong>
+                <span>exam cities covered</span>
+              </div>
+              <div>
+                <strong>98%</strong>
+                <span>satisfaction rating</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hero-card hero-card-top">
+              <div class="card-head">
+                <span class="card-tag">Upcoming trip</span>
+                <span class="card-status">Live preview</span>
+              </div>
+              <div class="route-summary">
+                <div>
+                  <strong>Bengaluru</strong>
+                  <span>to Pune</span>
+                </div>
+                <div class="trip-chip">JEE Main • 23 Apr</div>
+              </div>
+              <div class="route-map">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="route-details">
+                <div>
+                  <small>Best plan</small>
+                  <strong>Train + Metro</strong>
+                </div>
+                <div>
+                  <small>Est. cost</small>
+                  <strong>₹8,450</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-card hero-card-bottom">
+              <div class="mini-card-row">
+                <div class="mini-card">
+                  <strong>92%</strong>
+                  <span>Safety score</span>
+                </div>
+                <div class="mini-card">
+                  <strong>5</strong>
+                  <span>Budget tips</span>
+                </div>
+              </div>
+              <div class="budget-bar">
+                <span>Budget used</span>
+                <div class="progress-track"><div class="progress-fill"></div></div>
+              </div>
+            </div>
+
+            <div class="hero-badge">AI-powered student itinerary</div>
+          </div>
+        </section>
+
+        <section id="why" class="section section-surface">
+          <div class="section-head">
+            <span class="eyebrow">Why PathPilot</span>
+            <h2>Everything a student needs to travel with confidence.</h2>
+          </div>
+          <div class="feature-grid feature-grid-3">
+            <article class="feature-card">
+              <div class="feature-icon">&#x1F6E3;</div>
+              <h3>Cheapest route, fastest path</h3>
+              <p>Compare trains, buses, flights, and local transit in one smart exam journey plan.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon">&#x1F9E1;</div>
+              <h3>Stay safe in every city</h3>
+              <p>Access emergency contacts, safety checkpoints, and familiar transport guidance.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon">&#x1F4B0;</div>
+              <h3>Travel without exam stress</h3>
+              <p>Receive reminders, budget alerts, packing suggestions, and return route planning.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="features" class="section">
+          <div class="section-head center">
+            <span class="eyebrow">Core features</span>
+            <h2>All the tools students need for exam travel.</h2>
+          </div>
+          <div class="feature-grid feature-grid-2">
+            <article class="feature-panel">
+              <div class="icon-box">AI</div>
+              <h3>AI Trip Planner</h3>
+              <p>Generate a full travel itinerary with routes, transfers, stays, and safety tips in seconds.</p>
+            </article>
+            <article class="feature-panel">
+              <div class="icon-box">OCR</div>
+              <h3>Admit Card OCR</h3>
+              <p>Upload your exam admit card and let PathPilot extract your venue, date, and schedule automatically.</p>
+            </article>
+            <article class="feature-panel">
+              <div class="icon-box">₹</div>
+              <h3>Budget Optimizer</h3>
+              <p>Track trip expenses, compare affordable transport, and stay within your student budget.</p>
+            </article>
+            <article class="feature-panel">
+              <div class="icon-box">🏨</div>
+              <h3>Accommodation Finder</h3>
+              <p>Find safe, low-cost hostels and guesthouses close to your exam center.</p>
+            </article>
+            <article class="feature-panel">
+              <div class="icon-box">🗺️</div>
+              <h3>Local Transport Guide</h3>
+              <p>Get step-by-step metro, bus, auto, and walking advice for every city.</p>
+            </article>
+            <article class="feature-panel">
+              <div class="icon-box">🚨</div>
+              <h3>Emergency SOS</h3>
+              <p>Keep hospital, police, pharmacy, and helpline contacts ready inside your trip dashboard.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="flow" class="section section-accent">
+          <div class="section-head center light">
+            <span class="eyebrow">How it works</span>
+            <h2>Plan your exam journey in four simple steps.</h2>
+          </div>
+          <div class="process-grid">
+            <article class="process-step">
+              <div class="step-number">1</div>
+              <h3>Upload admit card</h3>
+              <p>Share your exam details and PathPilot reads venue, date, and time automatically.</p>
+            </article>
+            <article class="process-step">
+              <div class="step-number">2</div>
+              <h3>Set budget and origin</h3>
+              <p>Tell us your travel budget, preferred transport, and home location.</p>
+            </article>
+            <article class="process-step">
+              <div class="step-number">3</div>
+              <h3>Review your AI plan</h3>
+              <p>See a complete itinerary with routes, hotels, food stops, and safety guidance.</p>
+            </article>
+            <article class="process-step">
+              <div class="step-number">4</div>
+              <h3>Travel with confidence</h3>
+              <p>Use reminders, maps, and emergency support for a smooth exam trip and return journey.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="preview" class="section section-surface">
+          <div class="preview-grid">
+            <div class="preview-copy">
+              <span class="eyebrow">Product preview</span>
+              <h2>See your journey, budget, and safety score together.</h2>
+              <p>
+                PathPilot brings route planning, accommodation, transit, and critical
+                exam checkpoints into one polished dashboard.
+              </p>
+              <div class="preview-list">
+                <div>
+                  <strong>Live itinerary</strong>
+                  <p>One-click plan for exams, transit, stay and return trip.</p>
+                </div>
+                <div>
+                  <strong>Budget insights</strong>
+                  <p>Know exactly where your money goes and where to save.</p>
+                </div>
+                <div>
+                  <strong>Safety score</strong>
+                  <p>City-specific advice for hospitals, transport, and local rules.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="dashboard-card">
+              <div class="dashboard-header">
+                <div>
+                  <span>My trips</span>
+                  <strong>Exam travel summary</strong>
+                </div>
+                <span class="dashboard-status">Active</span>
+              </div>
+              <div class="dashboard-route">
+                <div class="route-icon"></div>
+                <div>
+                  <strong>Bengaluru → Pune</strong>
+                  <span>JEE Main • 23 Apr • 3 days</span>
+                </div>
+              </div>
+              <div class="dashboard-blend">
+                <div>
+                  <span>Arrival</span>
+                  <strong>6:40 PM</strong>
+                </div>
+                <div>
+                  <span>Budget</span>
+                  <strong>₹8,450</strong>
+                </div>
+              </div>
+              <div class="dashboard-metrics">
+                <div class="metric-card">
+                  <span>Safety</span>
+                  <strong>92%</strong>
+                </div>
+                <div class="metric-card">
+                  <span>Stay</span>
+                  <strong>₹1,550</strong>
+                </div>
+                <div class="metric-card">
+                  <span>Transport</span>
+                  <strong>₹5,700</strong>
+                </div>
+              </div>
+              <div class="dashboard-chip-row">
+                <span class="dashboard-chip">Train mode</span>
+                <span class="dashboard-chip">Seat alerts</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-dark">
+          <div class="section-head center light">
+            <span class="eyebrow">Student outcomes</span>
+            <h2>Designed for exam journeys, not generic travel.</h2>
+          </div>
+          <div class="outcome-grid">
+            <article class="outcome-card">
+              <strong>90s</strong>
+              <p>to generate a complete exam trip plan.</p>
+            </article>
+            <article class="outcome-card">
+              <strong>23%</strong>
+              <p>average travel savings compared to booking separately.</p>
+            </article>
+            <article class="outcome-card">
+              <strong>3x</strong>
+              <p>faster preparation in unfamiliar cities.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="testimonials" class="section section-surface">
+          <div class="section-head center">
+            <span class="eyebrow">Student stories</span>
+            <h2>Trusted by students who travel alone for exams.</h2>
+          </div>
+          <div class="testimonial-grid">
+            <article class="testimonial-card">
+              <p>“PathPilot helped me plan my Pune trip for JEE without any stress. I had my budget, routes, and safety checks in one place.”</p>
+              <div>
+                <strong>Riya Patel</strong>
+                <span>JEE aspirant, Bengaluru</span>
+              </div>
+            </article>
+            <article class="testimonial-card">
+              <p>“I loved that the app suggested hostel stays near the exam center and told me the nearest ambulance and pharmacy.”</p>
+              <div>
+                <strong>Amit Shah</strong>
+                <span>NEET aspirant, Jaipur</span>
+              </div>
+            </article>
+            <article class="testimonial-card">
+              <p>“The budget planner made it easy to track food, travel, and stay costs. It felt like I had a travel mentor.”</p>
+              <div>
+                <strong>Priya Singh</strong>
+                <span>CAT candidate, Lucknow</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="faq" class="section">
+          <div class="section-head center">
+            <span class="eyebrow">FAQ</span>
+            <h2>Everything you need to know about PathPilot.</h2>
+          </div>
+          <div class="faq-list">
+            <button class="faq-item" aria-expanded="false">
+              <span>Can I use PathPilot without an admit card?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-panel">
+              <p>Yes. Admit card upload speeds up the process, but you can also enter your exam details manually.</p>
+            </div>
+
+            <button class="faq-item" aria-expanded="false">
+              <span>Does PathPilot book tickets for me?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-panel">
+              <p>PathPilot plans and recommends routes, budgets, and stays. Booking is handled through your preferred travel partners or platforms.</p>
+            </div>
+
+            <button class="faq-item" aria-expanded="false">
+              <span>How accurate is the budget estimate?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-panel">
+              <p>Estimates are based on current transport and stay benchmarks for students. They are intended to guide planning, not replace actual booking pricing.</p>
+            </div>
+
+            <button class="faq-item" aria-expanded="false">
+              <span>Can PathPilot plan my return trip too?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-panel">
+              <p>Yes. You can create a round-trip itinerary and receive reminders for both outbound and return journeys.</p>
+            </div>
+
+            <button class="faq-item" aria-expanded="false">
+              <span>Is my travel data safe?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-panel">
+              <p>Absolutely. PathPilot is designed for privacy-first student travel planning and does not share your personal trip information without consent.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="cta" class="section section-cta" aria-label="Create account">
+          <div class="cta-copy">
+            <h2>Ready for your next exam journey?</h2>
+            <p>Start planning faster with a smarter student travel experience. Create your first trip in under 2 minutes.</p>
+          </div>
+          <a id="signup" href="register.html" class="button button-primary large">Create account</a>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-grid">
+          <div>
+            <div class="brand-mark compact">
+              <span class="brand-symbol">P</span>
+              <span class="brand-text">PathPilot</span>
+            </div>
+            <p>Smart travel planning for exam journeys — built with student safety, budget, and confidence in mind.</p>
+          </div>
+          <div>
+            <h4>Product</h4>
+            <a href="#features">Features</a>
+            <a href="#flow">How it works</a>
+            <a href="#preview">Preview</a>
+          </div>
+          <div>
+            <h4>Company</h4>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#faq">FAQ</a>
+            <a href="#cta">Contact</a>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <a href="mailto:hello@PathPilot.com">hello@PathPilot.com</a>
+            <a href="#">Privacy</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 PathPilot. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
